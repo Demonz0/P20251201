@@ -36,5 +36,13 @@ namespace P20251201
             StringAssert.Contains("+36", "+04 123 4567", message: "Nincs benne a keresett karakter.");
 
         }
+        [Test]
+        public void Test5()
+        {
+            //Assert.Pass();
+            int jelszohossz = 0;
+            Assert.IsTrue("asd12345".Length > 6, message:"Hosszabb mint a minnimum");
+
+        }
     }
 }
