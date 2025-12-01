@@ -12,7 +12,28 @@ namespace P20251201
         {
             //Assert.Pass();
             StringAssert.Contains("1", "Pelda@valami.hu", message:"Nincs benne a keresett karakter.");
-            StringAssert.Contains("@", "Pelda@valami.hu", message:"Benne van a keresett karakter.");
+            
+
+        }
+        [Test]
+        public void Test2()
+        {
+            //Assert.Pass();
+            StringAssert.Contains("@", "Pelda@valami.hu", message: "Benne van a keresett karakter.");
+
+        }
+        [Test]
+        public void Test3()
+        {
+            //Assert.Pass();
+            StringAssert.Contains("+36", "+36 30 123 4567", message: "Benne van a keresett karakter.");
+
+        }
+        [Test]
+        public void Test4()
+        {
+            //Assert.Pass();
+            StringAssert.Contains("+36", "+04 123 4567", message: "Nincs benne a keresett karakter.");
 
         }
     }
